@@ -92,5 +92,6 @@ public class SystemSettings {
         Settings.System.VOLUME_DIALOG_TIMEOUT,
         Settings.System.RINGTONE_VIBRATION_PATTERN,
         Settings.System.CUSTOM_RINGTONE_VIBRATION_PATTERN,
+        Settings.System.DOZE_ON_CHARGE,
     };
 }
