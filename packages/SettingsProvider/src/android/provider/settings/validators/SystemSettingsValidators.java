@@ -208,6 +208,7 @@ public class SystemSettingsValidators {
         VALIDATORS.put(System.FLASHLIGHT_ON_CALL_IGNORE_DND, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.FLASHLIGHT_ON_CALL_RATE, new InclusiveIntegerRangeValidator(1, 5));
         VALIDATORS.put(System.VOLUME_DIALOG_TIMEOUT, new InclusiveIntegerRangeValidator(1, 7));
+        VALIDATORS.put(System.DOZE_ON_CHARGE, BOOLEAN_VALIDATOR);
         VALIDATORS.put(System.RINGTONE_VIBRATION_PATTERN, new InclusiveIntegerRangeValidator(0, 4));
         VALIDATORS.put(System.CUSTOM_RINGTONE_VIBRATION_PATTERN, ANY_STRING_VALIDATOR);
         VALIDATORS.put(System.CUSTOM_RINGTONE_VIBRATION_PATTERN,
