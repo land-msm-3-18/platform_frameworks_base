@@ -86,5 +86,6 @@ public class SystemSettings {
         Settings.System.NOTIFICATION_LIGHT_PULSE,
         Settings.System.FULLSCREEN_GESTURES,
         Settings.System.NOTIFICATION_HEADERS,
+        Settings.System.FLASHLIGHT_ON_CALL,
     };
 }
