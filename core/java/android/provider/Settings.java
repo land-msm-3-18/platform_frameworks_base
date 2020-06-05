@@ -5953,6 +5953,7 @@ public final class Settings {
          * 2: mm-mm-mm
          * 3: da-da-dzzz
          * 4: da-dzzz-da
+         * 5: custom
          * @hide
          */
         @Readable
@@ -5962,6 +5963,14 @@ public final class Settings {
          * @hide
          */
         public static final String USE_OLD_MOBILETYPE = "use_old_mobiletype";
+
+        /**
+         * Custom vibration pattern
+         * format: ms,ms,ms each a range from 0 to 1000 ms
+         * @hide
+         */
+        @Readable
+        public static final String CUSTOM_RINGTONE_VIBRATION_PATTERN = "custom_ringtone_vibration_pattern";
 
         /**
          * Whether to show battery estimates in QS
