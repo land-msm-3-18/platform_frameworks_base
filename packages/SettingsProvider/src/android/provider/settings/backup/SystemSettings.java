@@ -87,5 +87,7 @@ public class SystemSettings {
         Settings.System.FULLSCREEN_GESTURES,
         Settings.System.NOTIFICATION_HEADERS,
         Settings.System.FLASHLIGHT_ON_CALL,
+        Settings.System.FLASHLIGHT_ON_CALL_IGNORE_DND,
+        Settings.System.FLASHLIGHT_ON_CALL_RATE,
     };
 }
