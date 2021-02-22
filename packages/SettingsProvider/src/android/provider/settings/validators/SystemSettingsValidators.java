@@ -210,5 +210,21 @@ public class SystemSettingsValidators {
         VALIDATORS.put(System.VOLUME_DIALOG_TIMEOUT, new InclusiveIntegerRangeValidator(1, 7));
         VALIDATORS.put(System.RINGTONE_VIBRATION_PATTERN, new InclusiveIntegerRangeValidator(0, 4));
         VALIDATORS.put(System.CUSTOM_RINGTONE_VIBRATION_PATTERN, ANY_STRING_VALIDATOR);
+        VALIDATORS.put(System.CUSTOM_RINGTONE_VIBRATION_PATTERN,
+                new Validator() {
+                    @Override
+                    public boolean validate(String value) {
+                        String[] args = value.split(",", 0);
+                        if (args.length != 3) return false;
+                        try {
+                            for (String str : args)
+                                if (Integer.parseInt(str) < 0)
+                                    return false;
+                        } catch (NumberFormatException e) {
+                            return false;
+                        }
+                        return true;
+                    }
+                });
     }
 }
