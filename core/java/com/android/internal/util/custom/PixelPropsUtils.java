@@ -18,10 +18,10 @@ package com.android.internal.util.custom;
 import android.os.Build;
 import android.util.Log;
 
-import java.util.Arrays;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,9 +42,9 @@ public class PixelPropsUtils {
 
     private static final Map<String, ArrayList<String>> propsToKeep;
     private static final String[] extraPackagesToChange = {
-        "com.android.chrome",
-        "com.android.vending",
-        "com.breel.wallpapers20"
+           "com.android.chrome",
+           "com.android.vending",
+           "com.breel.wallpapers20"
     };
 
     private static ArrayList<String> allProps = new ArrayList<>(Arrays.asList("BRAND", "MANUFACTURER", "DEVICE", "PRODUCT", "MODEL", "FINGERPRINT"));
@@ -72,7 +72,7 @@ public class PixelPropsUtils {
     }
 
     public static void setProps(String packageName) {
-        if (packageName == null){
+        if (packageName == null) {
             return;
         }
         if (packageName.equals(PACKAGE_GMS)) {
