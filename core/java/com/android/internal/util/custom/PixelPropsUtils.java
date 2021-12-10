@@ -65,7 +65,7 @@ public class PixelPropsUtils {
         propsToChangePixel6.put("MANUFACTURER", "Google");
         propsToChangePixel6.put("DEVICE", "raven");
         propsToChangePixel6.put("PRODUCT", "raven");
-        propsToChangePixel6.put("MODEL", "Pixel 6 Pro");
+        propsToChangePixel6.put("MODEL", "Pixel 6 Pro" + " ");
         propsToChangePixel6.put("FINGERPRINT", "google/raven/raven:12/SQ1D.211205.016.A1/7957957:user/release-keys");
         propsToChangePixel5 = new HashMap<>();
         propsToChangePixel5.put("BRAND", "google");
